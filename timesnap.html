@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quick Start - Leaflet</title>
+    <title>TimeSnap</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         html,
-        body,
-        #mapid { 
-            height: 100%; 
-            margin: 0; 
-            padding: 0; 
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #mapid {
+            height: calc(100% - 50px); /* Висота мапи з урахуванням висоти заголовка */
+        }
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 9999;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
         }
     </style>
 </head>
 <body>
+
+<div class="header">
+    <h1>TimeSnap</h1>
+</div>
 
 <div id="mapid"></div>
 
